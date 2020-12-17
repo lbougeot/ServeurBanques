@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ServeurWidget</class>
+ <widget class="QWidget" name="ServeurWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>302</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ServeurWidget</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Numéro de port</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonLancecementServeur">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>291</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lancement serveur</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clients</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditLogs">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>291</width>
+     <height>141</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonQuitter">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>291</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxNumeroPort">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1025</number>
+   </property>
+   <property name="maximum">
+    <number>3000</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>ServeurWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
